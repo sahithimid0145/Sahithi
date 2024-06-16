@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS_Task-5</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        width: 620px;
+        height: 520px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(94, 179, 249);
+        margin-top: 100px;
+      }
+      div a {
+        text-decoration: none;
+        margin: 3px;
+        background-color: white;
+        color: rgb(2, 2, 34);
+        padding: 5px;
+        display: block;
+        text-align: left;
+        line-height: normal;
+        width: 128px;
+        height: 17px;
+        font-weight: bold;
+        transition: 0.25s;
+        border-right: solid black 1em;
+      }
+      div a:hover {
+        color: rgb(76, 3, 246);
+        width: 132px;
+        height: 23px;
+      }
+
+      .home,
+      .musing,
+      .town,
+      .links {
+        padding: 2px;
+      }
+      .home a {
+        color: rgb(6, 10, 101);
+      }
+      .left {
+        padding-top: 40px;
+      }
+
+      .right {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: rgb(24, 12, 200);
+        font-weight: 600;
+        font-size: medium;
+        padding-left: 30px;
+        padding-right: 28px;
+      }
+
+      #dotline {
+        border-bottom: 2px dotted rgb(3, 7, 79);
+        padding-bottom: 18px;
+        color: rgb(4, 4, 63);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="home">
+          <a href="#">Home page</a>
+        </div>
+
+        <div class="musing">
+          <a href="#">Musings</a>
+        </div>
+
+        <div class="town">
+          <a href="#">My town</a>
+        </div>
+
+        <div class="links">
+          <a href="#">Links</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <h1>My first styled page</h1>
+        <p>Welcome to my styled page!</p>
+        <p>
+          It still lacks images, but atleast it has style. And it has links,
+          even if they don't go anywhere...
+        </p>
+        <p id="dotline">
+          There should be more here, but I don't know what yet.
+        </p>
+        <!-- <hr> -->
+        <p>
+          <i
+            >Made 5 April 2004 <br />
+            by myself.</i
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS_Task-4</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        position: fixed;
+        z-index: 999;
+        top: 10%;
+        left: 0;
+        height: auto;
+        width: auto;
+      }
+      .home,
+      .history,
+      .bookmarks,
+      .fav {
+        height: 60px;
+        width: 145px;
+        position: absolute;
+        left: -90px;
+        border-radius: 10px;
+        background-color: rgb(19, 236, 163);
+        top: 0%;
+        text-align: left;
+        transition: left 0.5s;
+        line-height: 50px;
+        padding: 3px;
+      }
+      .container > :hover {
+        left: 0px;
+      }
+      .history {
+        background-color: rgb(20, 156, 234);
+        top: 65px;
+      }
+      .bookmarks {
+        background-color: rgb(199, 64, 64);
+        top: 130px;
+      }
+      .fav {
+        background-color: rgb(54, 53, 53);
+        top: 195px;
+      }
+      a {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: medium;
+        text-decoration: none;
+        color: aliceblue;
+      }
+      a:hover {
+        color: rgb(153, 151, 151);
+      }
+      h1 {
+        margin-top: 7%;
+        margin-left: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h1>Hoverable Sidenav Buttons</h1>
+      <br />
+      <pre> <big>                  Hover over the buttons in the left side navigation to open them.</big></pre>
+    </div>
+
+    <div class="container">
+      <div class="home">
+        <a href="#">Home</a>
+      </div>
+      <div class="history">
+        <a href="#">History</a>
+      </div>
+      <div class="bookmarks">
+        <a href="#">Bookmarks</a>
+      </div>
+      <div class="fav">
+        <a href="#">Favourites</a>
+      </div>
+    </div>
+  </body>
+</html>
